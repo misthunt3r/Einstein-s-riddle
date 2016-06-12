@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Zagadka o rybkach</title>
+
+</head>
+<body>
+
+	<div class="main-background">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="title">Zagadka Einsteina</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fixed-background">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="fixed-title" >Zagadka Einsteina</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="whiterow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="introDefinition"><span class="bold">Zagadka Einsteina</span> lub <span class="bold">zagadka rybki</span> – zagadka znana w kilku różnych wersjach, której autorstwo tradycja przypisuje Albertowi Einsteinowi. Miał on powiedzieć, że jest w stanie ją rozwiązać jedynie 2% populacji świata. Czasami uważa się za jej twórcę Lewisa Carolla.</p>
+					<p class="introAuthor">Wikipedia</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bluerow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="opener">Zagadka prezentuje się następująco:</h1>
+					<p>5 ludzi różnych narodowości zamieszkuje 5 domów w 5 różnych kolorach. Wszyscy palą papierosy 5 różnych marek i piją 5 różnych napojów. Hodują zwierzęta 5 różnych gatunków. Który z nich trzyma w domu rybki?</p>
+					<ol>
+						<li>Norweg zamieszkuje pierwszy dom
+						<li>Anglik mieszka w czerwonym domu.
+						<li>Zielony dom znajduje się bezpośrednio po lewej stronie domu białego.
+						<li>Duńczyk pija herbatkę.
+						<li>Palacz papierosów light mieszka obok hodowcy kotów.
+						<li>Mieszkaniec żółtego domu pali cygara.
+						<li>Niemiec pali fajkę.
+						<li>Mieszkaniec środkowego domu pija mleko.
+						<li>Palacz papierosów light ma sąsiada, który pija wodę.
+						<li>Palacz papierosów bez filtra hoduje ptaki.
+						<li>Szwed hoduje psy.
+						<li>Norweg mieszka obok niebieskiego domu.
+						<li>Hodowca koni mieszka obok żółtego domu.
+						<li>Palacz mentolowych pija piwo.
+						<li>W zielonym domu pija się kawę.
+					</ol>
+					<p class="closer">Zakłada się, że domy ustawione są w jednej linii (1-2-3-4-5), a określenie "po lewej stronie" w punkcie 3. dotyczy lewej strony z perspektywy naprzeciw tych domów (tj. dom o numerze n jest bezpośrednio po lewej stronie domu n+1).</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="darkrow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 closer">
+					<div class="house" id="house1"><div class="roof" id="roof1"></div><div class="chimney" id="chimney1"></div></div>
+					<div class="house" id="house2"><div class="roof" id="roof2"></div><div class="chimney" id="chimney2"></div></div>
+					<div class="house" id="house3"><div class="roof" id="roof3"></div><div class="chimney" id="chimney3"></div></div>
+					<div class="house" id="house4"><div class="roof" id="roof4"></div><div class="chimney" id="chimney4"></div></div>
+					<div class="house" id="house5"><div class="roof" id="roof5"></div><div class="chimney" id="chimney5"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="whiterow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<form id="form" action="submit">
+						<select name="narodowosc1" id="narodowosc1">
+							<option selected class="grey">Narodowość</option>
+							<option value="anglik">Anglik</option>
+							<option value="dunczyk">Duńczyk</option>
+							<option value="niemiec">Niemiec</option>
+							<option value="norweg">Norweg</option>
+							<option value="szwed">Szwed</option>
+						</select>
+						<select name="narodowosc2" id="narodowosc2">
+							<option selected class="grey">Narodowość</option>
+							<option value="anglik">Anglik</option>
+							<option value="dunczyk">Duńczyk</option>
+							<option value="niemiec">Niemiec</option>
+							<option value="norweg">Norweg</option>
+							<option value="szwed">Szwed</option>
+						</select>
+						<select name="narodowosc3" id="narodowosc3">
+							<option selected class="grey">Narodowość</option>
+							<option value="anglik">Anglik</option>
+							<option value="dunczyk">Duńczyk</option>
+							<option value="niemiec">Niemiec</option>
+							<option value="norweg">Norweg</option>
+							<option value="szwed">Szwed</option>
+						</select>
+						<select name="narodowosc4" id="narodowosc4">
+							<option selected class="grey">Narodowość</option>
+							<option value="anglik">Anglik</option>
+							<option value="dunczyk">Duńczyk</option>
+							<option value="niemiec">Niemiec</option>
+							<option value="norweg">Norweg</option>
+							<option value="szwed">Szwed</option>
+						</select>
+						<select name="narodowosc5" id="narodowosc5">
+							<option selected class="grey">Narodowość</option>
+							<option value="anglik">Anglik</option>
+							<option value="dunczyk">Duńczyk</option>
+							<option value="niemiec">Niemiec</option>
+							<option value="norweg">Norweg</option>
+							<option value="szwed">Szwed</option>
+						</select><br>
+						<select name="kolor1" id="kolor1">
+							<option selected class="grey" value="szary">Kolor</option>
+							<option value="bialy">biały</option>
+							<option value="czerwony">czerwony</option>
+							<option value="niebieski">niebieski</option>
+							<option value="zielony">zielony</option>
+							<option value="zolty">żółty</option>
+						</select>
+						<select name="kolor2" id="kolor2">
+							<option selected class="grey" value="szary">Kolor</option>
+							<option value="bialy">biały</option>
+							<option value="czerwony">czerwony</option>
+							<option value="niebieski">niebieski</option>
+							<option value="zielony">zielony</option>
+							<option value="zolty">żółty</option>
+						</select>
+						<select name="kolor3" id="kolor3">
+							<option selected class="grey" value="szary">Kolor</option>
+							<option value="bialy">biały</option>
+							<option value="czerwony">czerwony</option>
+							<option value="niebieski">niebieski</option>
+							<option value="zielony">zielony</option>
+							<option value="zolty">żółty</option>
+						</select>
+						<select name="kolor4" id="kolor4">
+							<option selected class="grey" value="szary">Kolor</option>
+							<option value="bialy">biały</option>
+							<option value="czerwony">czerwony</option>
+							<option value="niebieski">niebieski</option>
+							<option value="zielony">zielony</option>
+							<option value="zolty">żółty</option>
+						</select>
+						<select name="kolor5"  id="kolor5">
+							<option selected class="grey" value="szary">Kolor</option>
+							<option value="bialy">biały</option>
+							<option value="czerwony">czerwony</option>
+							<option value="niebieski">niebieski</option>
+							<option value="zielony">zielony</option>
+							<option value="zolty">żółty</option>
+						</select><br>
+						<select name="napoj1" id="napoj1">
+							<option selected class="grey">Napój</option>
+							<option value="kawa">kawa</option>
+							<option value="herbata">herbata</option>
+							<option value="mleko">mleko</option>
+							<option value="piwo">piwo</option>
+							<option value="woda">woda</option>
+						</select>
+						<select name="napoj2" id="napoj2">
+							<option selected class="grey">Napój</option>
+							<option value="kawa">kawa</option>
+							<option value="herbata">herbata</option>
+							<option value="mleko">mleko</option>
+							<option value="piwo">piwo</option>
+							<option value="woda">woda</option>
+						</select>
+						<select name="napoj3" id="napoj3">
+							<option selected class="grey">Napój</option>
+							<option value="kawa">kawa</option>
+							<option value="herbata">herbata</option>
+							<option value="mleko">mleko</option>
+							<option value="piwo">piwo</option>
+							<option value="woda">woda</option>
+						</select>
+						<select name="napoj4" id="napoj4">
+							<option selected class="grey">Napój</option>
+							<option value="kawa">kawa</option>
+							<option value="herbata">herbata</option>
+							<option value="mleko">mleko</option>
+							<option value="piwo">piwo</option>
+							<option value="woda">woda</option>
+						</select>
+						<select name="napoj5" id="napoj5">
+							<option selected class="grey">Napój</option>
+							<option value="kawa">kawa</option>
+							<option value="herbata">herbata</option>
+							<option value="mleko">mleko</option>
+							<option value="piwo">piwo</option>
+							<option value="woda">woda</option>
+						</select><br>
+						<select name="zwierze1" id="zwierze1">
+							<option selected class="grey">Zwierzę</option>
+							<option value="konie">konie</option>
+							<option value="koty">koty</option>
+							<option value="psy">psy</option>
+							<option value="ptaki">ptaki</option>
+							<option value="rybki">rybki</option>
+						</select>
+						<select name="zwierze2" id="zwierze2">
+							<option selected class="grey">Zwierzę</option>
+							<option value="konie">konie</option>
+							<option value="koty">koty</option>
+							<option value="psy">psy</option>
+							<option value="ptaki">ptaki</option>
+							<option value="rybki">rybki</option>
+						</select>
+						<select name="zwierze3" id="zwierze3">
+							<option selected class="grey">Zwierzę</option>
+							<option value="konie">konie</option>
+							<option value="koty">koty</option>
+							<option value="psy">psy</option>
+							<option value="ptaki">ptaki</option>
+							<option value="rybki">rybki</option>
+						</select>
+						<select name="zwierze4" id="zwierze4">
+							<option selected class="grey">Zwierzę</option>
+							<option value="konie">konie</option>
+							<option value="koty">koty</option>
+							<option value="psy">psy</option>
+							<option value="ptaki">ptaki</option>
+							<option value="rybki">rybki</option>
+						</select>
+						<select name="zwierze5" id="zwierze5">
+							<option selected class="grey">Zwierzę</option>
+							<option value="konie">konie</option>
+							<option value="koty">koty</option>
+							<option value="psy">psy</option>
+							<option value="ptaki">ptaki</option>
+							<option value="rybki">rybki</option>
+						</select><br>
+						<select name="papierosy1" id="papierosy1">
+							<option selected class="grey">Papierosy</option>
+							<option value="bez">bez filtra</option>
+							<option value="cygara">cygara</option>
+							<option value="fajka">fajka</option>
+							<option value="light">light</option>
+							<option value="mentol">mentolowe</option>
+						</select>
+						<select name="papierosy2" id="papierosy2">
+							<option selected class="grey">Papierosy</option>
+							<option value="bez">bez filtra</option>
+							<option value="cygara">cygara</option>
+							<option value="fajka">fajka</option>
+							<option value="light">light</option>
+							<option value="mentol">mentolowe</option>
+						</select>
+						<select name="papierosy3" id="papierosy3">
+							<option selected class="grey">Papierosy</option>
+							<option value="bez">bez filtra</option>
+							<option value="cygara">cygara</option>
+							<option value="fajka">fajka</option>
+							<option value="light">light</option>
+							<option value="mentol">mentolowe</option>
+						</select>
+						<select name="papierosy4" id="papierosy4">
+							<option selected class="grey">Papierosy</option>
+							<option value="bez">bez filtra</option>
+							<option value="cygara">cygara</option>
+							<option value="fajka">fajka</option>
+							<option value="light">light</option>
+							<option value="mentol">mentolowe</option>
+						</select>
+						<select name="papierosy5" id="papierosy5">
+							<option selected class="grey">Papierosy</option>
+							<option value="bez">bez filtra</option>
+							<option value="cygara">cygara</option>
+							<option value="fajka">fajka</option>
+							<option value="light">light</option>
+							<option value="mentol">mentolowe</option>
+						</select><br>
+						<div class="row centered">
+							<div class="col-md-12">
+								<input type="submit" class='przyciski' id="button" value="Sprawdź!">
+								<div class='przyciski' id="dobrze">Dobrze!</div>
+								<div class='przyciski' id="zle">Źle!</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.2.min.js"
+			integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="
+			crossorigin="anonymous"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/code.js"></script>
+
+	
+</body>
+</html>
